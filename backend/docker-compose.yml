@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+  app:
+    build:
+      context: ./microservices/customer_services
+      dockerfile: Dockerfile
+    container_name: customer_app
+    restart: always
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:SATYAM2001@host.docker.internal:5432/barcode_db
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+  auth:
+    build:
+      context: ./microservices/auth_services
+      dockerfile: Dockerfile
+    container_name: auth_services
+    restart: always
+    environment:
+      DATABASE_URL: postgresql+asyncpg://postgres:SATYAM2001@host.docker.internal:5432/barcode_db
+    ports:
+      - "8001:8001"
+    volumes:
+      - .:/app
+

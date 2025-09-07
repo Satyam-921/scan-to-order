@@ -1,0 +1,6 @@
+setup.py
+scan_to_order.egg-info/PKG-INFO
+scan_to_order.egg-info/SOURCES.txt
+scan_to_order.egg-info/dependency_links.txt
+scan_to_order.egg-info/requires.txt
+scan_to_order.egg-info/top_level.txt

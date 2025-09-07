@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: scan-to-order
+Version: 0.1.0
+Summary: Restaurant ordering system backend
+Author: Satyam Pandey
+Requires-Python: >=3.8
+Requires-Dist: fastapi
+Requires-Dist: sqlalchemy
+Requires-Dist: psycopg2-binary
+Dynamic: author
+Dynamic: requires-dist
+Dynamic: requires-python
+Dynamic: summary
